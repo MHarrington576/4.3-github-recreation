@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Your Repositories</title>
+    <link rel="stylesheet" href="css/app.css">
+    <script src="https://use.fontawesome.com/d2d801d2e0.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/locale/af.js"></script> -->
+  </head>
+  <body>
+
+    <header class="well">
+      <div id="well-container">
+        <img class="github-logo" src="images/github-logo.png">
+        <input id="header-search" type="search" placeholder="Search GitHub">
+        <nav class="header-nav">
+          <a href="#" class="header-nav-link">Pull requests</a>
+          <a href="#" class="header-nav-link">Issues</a>
+          <a href="#" class="header-nav-link">Gist</a>
+        </nav>
+        <div class="header-dropdowns">
+          <a href="#" class="header-dropdown-link"><i class="fa fa-bell" aria-hidden="true"></i></a>
+          <a href="#" class="header-dropdown-link"><i class="fa fa-plus" aria-hidden="true"></i> <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+          <a href="#"><img id="profile-pic-dropdown" src="https://avatars.githubusercontent.com/u/22138288?v=3"> <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <div id="container">
+      <aside>
+        <div class="sidebar">
+        <!--GH sidebar stuff---------------------->
+        </div>
+        <div class="org-storage">
+        <!--organizations-stuff------------------->
+        </div>
+      </aside>
+
+      <nav class="profile-nav">
+        <!--profile-nav stuff--------------------->
+        <span class="red-underline">___________________</span>
+      </nav>
+      <hr>
+
+      <div class="profile-actions">
+        <input id="repo-search" type="search" placeholder="Search repositories...">
+        <button id="repo-type-btn">Type: All <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        <button id="repo-language-btn">Language: All <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        <button id="new-repo-btn"><i class="fa fa-book"></i> New</button>
+        <hr>
+      </div>
+
+      <section id="repository-list">
+        <!--GH repositories----------------------->
+      </section>
+
+      <footer>
+        <br>
+        <hr>
+        <div class="footer-left">
+          <span class="footer-left-link" id="copyright">(c) 2016 GitHub, Inc.</span>
+          <a href="#" class="footer-left-link">Terms</a>
+          <a href="#" class="footer-left-link">Privacy</a>
+          <a href="#" class="footer-left-link">Security</a>
+          <a href="#" class="footer-left-link">Status</a>
+          <a href="#">Help</a>
+        </div>
+        <img class="github-logo-2" src="images/github-logo.png">
+        <div class="footer-right">
+          <a href="#">Contact GitHub</a>
+          <a href="#" class="footer-right-link">API</a>
+          <a href="#" class="footer-right-link">Training</a>
+          <a href="#" class="footer-right-link">Shop</a>
+          <a href="#" class="footer-right-link">Blog</a>
+          <a href="#" class="footer-right-link">About</a>
+      </div>
+      </footer>
+    </div>
+
+    <script id="profile-nav-template" type='text/template'>
+      <div id="profile-nav-links">
+        <a href="#" class="profile-overview-link">Overview</a>
+        <a href="#" class="profile-nav-link">Repositories <span class="p-nav-count">{{public_repos}}</span></a>
+        <a href="#" class="profile-nav-link">Stars <span class="p-nav-count">1</span></a>
+        <a href="#" class="profile-nav-link">Followers <span class="p-nav-count">{{followers}}</span></a>
+        <a href="#" class="profile-nav-link">Following <span class="p-nav-count">{{following}}</span></a>
+      </div>
+    </script>
+
+    <script id="sidebar-template" type='text/template'>
+      <img class="profile-pic" src="{{avatar_url}}">
+      <div id="name">{{name}}</div>
+      <div id="username">{{login}}</div>
+      <div id="bio">{{bio}}<div>
+      <button id="edit-profile">Edit profile</button>
+      <hr>
+      <div id="location"><i class="fa fa-map-marker" aria-hidden="true"></i> {{location}}</div>
+      <div id="email"><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="#">{{email}}</a></div>
+      <div id="creation-time"><i class="fa fa-clock-o fa-flip-horizontal" aria-hidden="true"></i> Joined on Sep 11, 2016</div>
+      <hr>
+    </script>
+
+    <script id="organizations-template" type='text/template'>
+      <h3>Organizations</h3>
+      <a href="#"><img class="org-avatar" src="{{avatar_url}}"></a>
+    </script>
+
+    <script id="repos-template" type="text/template">
+      <a class="repo-name" href="#">{{name}}</a>
+      <span class="repo-description">{{description}}</span>
+      <div class="right-side-repo">
+        <span class="repo-language"><i id="language-color" class="fa fa-circle {{language}}"></i> {{language}}</span>
+        <span class="repo-star-count"><i class="fa fa-star"></i> {{stargazers_count}}</span>
+      </div>
+      <hr class="repo-border">
+    </script>
+
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
