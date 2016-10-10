@@ -1,11 +1,267 @@
 $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 
+/*Color Palette*/
+$wh: #FFFFFF;
+$bk: #000000;
+$bl: #0587CA;
+$gr: #767676;
+$lg: #827676;
+$dg: #666666;
 
+
+/*General Formatting*/
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
+#container {
+  margin-left: 225px;
+  margin-right: 220px;
+}
+
 img {
   max-width: 100%;
+}
+
+header a {
+  text-decoration: none;
+  color: $bk;
+}
+
+a:hover{
+  color: $bl;
+  text-decoration: none;
+}
+
+aside {
+  float: left;
+  width: 232px;
+  margin-right: 25px;
+}
+
+/*Targeted Formatting*/
+#header-search {
+  width: 358px;
+  height: 26px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-left: 5px;
+}
+
+.profile-pic {
+  width: 232px;
+  height: 232px;
+  border-radius: 8px;
+}
+
+.github-logo {
+  width: 29px;
+  height: 29px;
+  position: relative;
+  bottom: 2px;
+}
+
+.header-nav {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.header-dropdowns {
+  display: inline-block;
+  float: right;
+}
+
+#profile-pic-dropdown {
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+}
+
+.well {
+  height: 50px;
+}
+
+#well-container {
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: -8px;
+}
+
+.header-nav-link {
+  margin-left: 20px;
+  font-size: 13px;
+}
+
+.header-dropdown-link {
+  margin-right: 15px;
+}
+
+.profile-overview-link {
+  margin-left: 20px;
+}
+
+.profile-nav-link {
+  margin-left: 45px;
+}
+
+.profile-overview-link, .profile-nav-link {
+  color: $dg;
+}
+
+.p-nav-count {
+  background-color: #EEEEEE;
+  border-radius: 5px;
+  margin-left: 3px;
+  font-weight: bold;
+}
+
+.profile-overview-link:hover, .profile-nav-link:hover {
+  color: #000000;
+}
+
+.red-underline {
+  color: #C9510C;
+  position: absolute;
+  top: 95px;
+  right: 698px;
+}
+
+#sidebar-template {
+  color: $bk;
+}
+
+#name {
+  font-size: 25px;
+  font-weight: bold;
+  color: $bk;
+}
+
+#username {
+  font-size: 20px;
+  color: $dg;
+}
+
+#edit-profile {
+  width: 233px;
+  height: 34px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.org-avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 4px;
+}
+
+#repo-search {
+  width: 380px;
+  height: 34px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#repo-type-btn {
+  width: 96px;
+  height: 34px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
+  bottom: 1px;
+  background-color: #F5F5F5;
+  margin-left: 20px;
+}
+
+#repo-language-btn {
+  width: 130px;
+  height: 34px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
+  bottom: 1px;
+  background-color: #F5F5F5;
+}
+
+#new-repo-btn {
+  width: 72px;
+  height: 34px;
+  border-radius: 5px;
+  border: 1px solid rgba(92, 169, 65, 0.5);
+  position: relative;
+  bottom: 1px;
+  margin-left: 10px;
+  background-color: #84D265;
+  color: #FFFFFF;
+}
+
+.repo-name {
+  font-weight: bold;
+  color: $bl;
+  font-size: 16px;
+}
+
+.repo-name:hover {
+  text-decoration: underline;
+}
+
+.repo-description {
+  color: $gr;
+  display: block;
+  margin-top: 5px;
+}
+
+.right-side-repo {
+  float: right;
+}
+
+footer {
+  text-align: center;
+}
+
+/*Language Color-Coding*/
+.HTML {
+  color: #E44B23;
+}
+
+.CSS {
+  color: #563D7C;
+}
+
+.JavaScript {
+  color: #F1E05A;
+}
+
+.Python {
+  color: #3572A5;
+}
+
+.PHP {
+  color: #4F5D95;
+}
+
+.Python {
+  color: #3572A5;
+}
+
+.Ruby {
+  color: #701516;
+}
+
+.Java {
+  color: #B07219;
+}
+
+.Perl {
+  color: #0298C3;
+}
+
+.Objective-C++ {
+  color: #6866FB;
+}
+
+.Shell {
+  color: #89E051;
 }
