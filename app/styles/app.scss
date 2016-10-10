@@ -38,6 +38,7 @@ aside {
   float: left;
   width: 232px;
   margin-right: 25px;
+  margin-bottom: 1425px;
 }
 
 /*Targeted Formatting*/
@@ -140,11 +141,38 @@ aside {
 #username {
   font-size: 20px;
   color: $dg;
+  position: relative;
+  bottom: 5px;
+}
+
+#bio {
+  color: $gr;
+  margin-bottom: 10px;
 }
 
 #edit-profile {
   width: 233px;
   height: 34px;
+  color: $bk;
+  font-weight: bold;
+  margin-top: 18px;
+  margin-bottom: -2px;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: #F5F5F5;
+}
+
+#location, #email {
+  margin-bottom: 10px;
+  color: $bk;
+}
+
+#creation-time {
+  color: $bk;
+}
+
+.fa-map-marker, .fa-envelope-o, .fa-clock-o {
+  color: $gr;
 }
 
 h3 {
@@ -157,11 +185,18 @@ h3 {
   border-radius: 4px;
 }
 
+#repository-list {
+}
+
 #repo-search {
   width: 380px;
   height: 34px;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#header-search, #repo-search {
+  padding-left: 10px;
 }
 
 #repo-type-btn {
@@ -211,14 +246,63 @@ h3 {
   color: $gr;
   display: block;
   margin-top: 5px;
+  margin-bottom: 40px;
+  font-size: 14.5px;
+}
+
+.repo-language {
+  color: $gr;
+  position: absolute;
+  left: 810px;
+  text-align: left;
 }
 
 .right-side-repo {
+  position: relative;
+  bottom: 83px;
+}
+
+.repo-star-count {
   float: right;
+  color: $gr;
 }
 
 footer {
   text-align: center;
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+
+.footer-left, .footer-right {
+  display: inline;
+}
+
+.footer-left {
+  position: relative;
+  right: 125px;
+}
+
+.footer-left-link {
+  margin-right: 15px;
+}
+
+#copyright {
+  color: $gr;
+}
+
+.github-logo-2 {
+  opacity: 0.2;
+  width: 25px;
+  height: 25px;
+}
+
+.footer-right {
+  position: relative;
+  left: 125px;
+}
+
+.footer-right-link {
+  margin-left: 15px;
 }
 
 /*Language Color-Coding*/

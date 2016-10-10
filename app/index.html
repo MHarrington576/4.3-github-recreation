@@ -6,6 +6,7 @@
     <title>Your Repositories</title>
     <link rel="stylesheet" href="css/app.css">
     <script src="https://use.fontawesome.com/d2d801d2e0.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/locale/af.js"></script> -->
   </head>
   <body>
 
@@ -57,19 +58,23 @@
       <footer>
         <br>
         <hr>
-        <span>(c) GitHub, Inc.</span>
-        <a href="#">Terms</a>
-        <a href="#">Privacy</a>
-        <a href="#">Security</a>
-        <a href="#">Status</a>
-        <a href="#">Help</a>
-        <img class="github-logo" src="images/github-logo.png">
-        <a href="#">Contact GitHub</a>
-        <a href="#">API</a>
-        <a href="#">Training</a>
-        <a href="#">Shop</a>
-        <a href="#">Blog</a>
-        <a href="#">About</a>
+        <div class="footer-left">
+          <span class="footer-left-link" id="copyright">(c) 2016 GitHub, Inc.</span>
+          <a href="#" class="footer-left-link">Terms</a>
+          <a href="#" class="footer-left-link">Privacy</a>
+          <a href="#" class="footer-left-link">Security</a>
+          <a href="#" class="footer-left-link">Status</a>
+          <a href="#">Help</a>
+        </div>
+        <img class="github-logo-2" src="images/github-logo.png">
+        <div class="footer-right">
+          <a href="#">Contact GitHub</a>
+          <a href="#" class="footer-right-link">API</a>
+          <a href="#" class="footer-right-link">Training</a>
+          <a href="#" class="footer-right-link">Shop</a>
+          <a href="#" class="footer-right-link">Blog</a>
+          <a href="#" class="footer-right-link">About</a>
+      </div>
       </footer>
     </div>
 
@@ -92,7 +97,7 @@
       <hr>
       <div id="location"><i class="fa fa-map-marker" aria-hidden="true"></i> {{location}}</div>
       <div id="email"><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="#">{{email}}</a></div>
-      <div id="creation-time"><i class="fa fa-clock-o fa-flip-horizontal" aria-hidden="true"></i> Joined on {{created_at}}</div>
+      <div id="creation-time"><i class="fa fa-clock-o fa-flip-horizontal" aria-hidden="true"></i> Joined on Sep 11, 2016</div>
       <hr>
     </script>
 
@@ -108,7 +113,7 @@
         <span class="repo-language"><i id="language-color" class="fa fa-circle {{language}}"></i> {{language}}</span>
         <span class="repo-star-count"><i class="fa fa-star"></i> {{stargazers_count}}</span>
       </div>
-      <hr>
+      <hr class="repo-border">
     </script>
 
     <script src="js/bundle.js"></script>

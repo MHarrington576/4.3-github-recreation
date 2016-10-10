@@ -18,6 +18,7 @@ function displayThisAttributeList(data){
   $profileAttributeContainer.append(profileTemplate(profileAttributes));
 }
 
+
 $.ajax('https://api.github.com/users/MHarrington576/orgs').then(displayOrganizations);
 
 function displayOrganizations(data){
@@ -33,7 +34,6 @@ function displayOrganizations(data){
 }
 
 
-
 $.ajax('https://api.github.com/users/MHarrington576').then(displayAttributeList);
 
 function displayAttributeList(data){
@@ -42,6 +42,11 @@ function displayAttributeList(data){
 
   var source = $('#sidebar-template').html();
   var template = Handlebars.compile(source);
+
+  // if("created_at" !== undefined){
+  //   "created_at" = moment().format('MMM Do YYYY');
+  //   return "created_at";
+  // }
 
   $attributeContainer.append(template(attributes));
 }
